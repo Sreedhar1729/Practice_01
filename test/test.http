@@ -1,0 +1,28 @@
+
+### read data
+
+GET http://localhost:4004/StudentSRV/Student?$epxpand=Teacher HTTP/1.1
+
+### creating data
+
+POST http://localhost:4004/StudentSRV/Student HTTP/1.1
+Content-Type:application/json
+    
+{
+      "Sno": "c60400a8-f169-4aa0-b103-02fd543e6877",
+      "name": "rambabu",
+      "address": "hd"
+}
+### for creating other entity
+
+POST  http://localhost:4004/StudentSRV/Student HTTP/1.1
+Content-Type: application/json
+
+{
+    "Sno": "c60400a9-f169-4aa0-b103-02fd543e6877",
+      "name": "raavibabu",
+      "address": "banglore"   
+}
+
+### for filtering value
+GET http://localhost:4004/StudentSRV/Student/c60400a8-f169-4aa0-b103-02fd543e6877 HTTP/1.1
